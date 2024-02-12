@@ -19,7 +19,7 @@ const Profile = () => {
     const nav = useNavigate();
 
     async function getMyProduct(){
-        const product = await axios.get('/api/v1/my-product');
+        const product = await axios.get('https://3dcpv7-4000.csb.app/api/v1/my-product');
         console.log(product.data.product);
         setMyProduct(product.data.product);
     }
@@ -40,7 +40,7 @@ const Profile = () => {
     }, [isAuth] )
 
     async function getMyChats(){
-        const chats = await axios.get('/api/v1/chat');
+        const chats = await axios.get('https://3dcpv7-4000.csb.app/api/v1/chat');
         console.log(chats.data.emailList);
         setmychats(chats.data.emailList);
     }
