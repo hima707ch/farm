@@ -16,7 +16,7 @@ const Navbar = () => {
 
   async function handleLogout(){
     dispatch(logout())
-    const response = await axios.get("/logout", { withCredentials: 'true', } );
+    const response = await axios.get("https://3dcpv7-4000.csb.app/logout", { withCredentials: 'true', } );
   }
 
   return (
