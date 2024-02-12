@@ -2,7 +2,7 @@
   "name": "farmkal",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:4000",
+  "proxy": "https://3dcpv7-4000.csb.app",
   "dependencies": {
     "@auth0/auth0-react": "^2.2.4",
     "@emotion/react": "^11.11.1",
