@@ -15,12 +15,12 @@ const Login = () => {
   const nav = useNavigate();
 
   function handleOAuth(){
-    window.open('http://localhost:4000/auth/google/callback',"_self");
+    window.open('https://3dcpv7-4000.csb.app/auth/google/callback',"_self");
   }
 
   const getUser = async () => {
     try {
-        const response = await axios.get("http://localhost:4000/login/sucess", { withCredentials: 'true', });
+        const response = await axios.get("https://3dcpv7-4000.csb.app/login/sucess", { withCredentials: 'true', });
 
         console.log("response",response)
 
