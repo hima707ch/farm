@@ -21,7 +21,7 @@ const ItemCard = ({prod}) => {
   // } , [quantity] )
 
   async function getItem(){
-    const resp = await axios.get(`/api/v1/product/${prod.productId}`);
+    const resp = await axios.get(`https://3dcpv7-4000.csb.app/api/v1/product/${prod.productId}`);
 
     if(resp.data.success == false){
       return;
@@ -32,7 +32,7 @@ const ItemCard = ({prod}) => {
   }
 
   async function removeItem(){
-    const resp = await axios.put(`/api/v1/cart`,{ type:'remove', productId : prod.productId });
+    const resp = await axios.put(`https://3dcpv7-4000.csb.app/api/v1/cart`,{ type:'remove', productId : prod.productId });
 
     dispatch( setUser( resp.data.user ) );
 
