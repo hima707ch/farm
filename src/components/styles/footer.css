@@ -1,0 +1,23 @@
+.f-cont{
+    display: flex;
+    
+    justify-content: space-evenly;
+    background-color: #232F3E;
+    color: white;
+    padding: 2rem;
+}
+
+.f-logo{
+    width: 15rem;
+    scale: invert(100%);
+    filter: invert(100%);
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+}
+
+.f-play{
+    width: 8rem;
+}

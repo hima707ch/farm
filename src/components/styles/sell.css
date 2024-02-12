@@ -1,0 +1,147 @@
+.sell-cont{
+    display: flex;
+    
+    padding: 15vh 5vw;
+}
+
+.image-cont{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-list > img{
+    width: 10rem;
+    margin-right: 2vw;
+}
+
+.data-cont{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-left: 4vw;
+}
+
+.data-cont > input, textarea, select, option{
+    margin : 1vw 4vw;
+    padding: 1vw;
+    font-size: 1.15rem;
+    border-radius: 0.5vw; 
+    border: 1px solid rgb(120, 120, 120);   
+}
+
+.upload{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 2rem;
+    width: 10.5rem;
+    height: 10.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin: 2vw;
+}
+
+.upload:hover{
+    transform: translateY(-5px);
+}
+
+.upload > p{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.show-img{
+    width: 25rem;
+    height: 15rem;
+    background-color: #fff;
+    margin: 2rem;
+}
+
+.special-prod > h3 {
+    margin-top: 0;
+}
+
+.agri-icon{
+    margin: 0 1rem;
+}
+
+.tractor{
+    color: rgb(67, 89, 200);
+    background-color: #e4e4e4;
+    padding: 1.75rem 0.75rem 0.25rem 0.75rem; 
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    align-items: center;
+    border: 1px solid rgb(120, 120, 120);  
+    margin-right: 1.5rem; 
+    cursor: pointer;
+}
+
+
+
+.special-prod{
+    margin: 1rem 0rem;
+    display: flex;
+    overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; 
+}
+
+.data-cont > button {
+    width: min-content;
+    padding: 0.75rem 1.75rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    background-color: #6f6e6a;
+    color: White;
+    font-size: 1.25rem;
+    border: 0rem;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+
+.data-cont > button:hover{
+    
+}
+
+.overlay{
+    position: fixed;
+    top:0;
+    right: 0;
+    left : 0;
+    bottom : 0;
+    background-color: rgb(0,0,0,0.75);
+    
+}
+
+.edit-cont{
+    background-color: white;
+    padding: 6rem;
+    position: fixed;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2.25rem;
+  height: 60vh;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+.hei{
+    margin-top: 5rem;
+    height: 5rem;
+    background-color: #6f6e6a;
+    color: #806b15;
+
+}

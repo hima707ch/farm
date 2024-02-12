@@ -1,0 +1,77 @@
+.items-cont{
+    margin : 8rem 7.5vw;
+}
+
+.item-cont{
+    display: flex;
+    width :70%;
+    margin-bottom: 4vh;
+    border: 2px solid black;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+}
+
+.card-detail{
+    margin-right: 3rem;
+}
+
+.card-detail h3{
+    font-size: 1.6rem;
+}
+
+.card-detail p{
+    font-size: 1.35rem;
+}
+
+.item-cont > img{
+    width: 10rem;
+    margin-right: 2vw;
+    object-fit: contain;
+}
+
+.price{
+    color: green;
+}
+
+.quantity{
+    border: 1px solid black;
+    width: 50%;
+    background-color: white;
+    display: flex;
+}
+
+.qu-but{
+padding: 0rem 1rem;
+font-size: 1rem;
+border: none;
+width: 37.5%;
+
+}
+
+.quantity-inp{
+    width: 23%;
+    text-align: center;
+    font-size: 1rem;
+    border: none;
+
+    
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.rmv-but{
+    margin-left: auto;
+    background-color: transparent;
+    cursor: pointer;
+    color: red;
+    font-size: 1.1rem;
+    height: 1rem;
+    align-self: center;
+    border: none;
+}
