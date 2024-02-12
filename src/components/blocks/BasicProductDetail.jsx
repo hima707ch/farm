@@ -42,7 +42,7 @@ const BasicProductDetail = ({images, prev, type}) => {
 
           if(type == 'new'){
 
-              const resp = await axios.post('/api/v1/products', myform);
+              const resp = await axios.post('https://3dcpv7-4000.csb.app/api/v1/products', myform);
               
               enqueueSnackbar("Successfully uploaded", {variant : 'success', anchorOrigin : {
                   vertical: 'top',
@@ -51,7 +51,7 @@ const BasicProductDetail = ({images, prev, type}) => {
                 );
             }
             if(type == 'edit'){
-                const resp = await axios.put(`/api/v1/product/${prev._id}`, myform);
+                const resp = await axios.put(`https://3dcpv7-4000.csb.app/api/v1/product/${prev._id}`, myform);
 
                 enqueueSnackbar("Update Successfully", {variant : 'success', anchorOrigin : {
                     vertical: 'top',
