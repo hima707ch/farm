@@ -22,7 +22,7 @@ const ChatPage = ({prod, reciverId, setshowChat}) => {
 
   async function fetchChat(){
     // Loading prev chat
-    const resp = await axios.get(`/api/v1/chat/${ reciverId }`);
+    const resp = await axios.get(`https://3dcpv7-4000.csb.app/api/v1/chat/${ reciverId }`);
 
     const chat = prod ? resp.data.chatData.filter( chat => (chat.product == prod._id) ? true : false ) : resp.data.chatData;
 
@@ -32,7 +32,7 @@ const ChatPage = ({prod, reciverId, setshowChat}) => {
   }
 
   async function fetchReciver(){
-    const resp = await axios.get(`/api/v1/user/${ reciverId }`);
+    const resp = await axios.get(`https://3dcpv7-4000.csb.app/api/v1/user/${ reciverId }`);
     setreciever(resp.data.user);
   }
   
