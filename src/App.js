@@ -21,7 +21,7 @@ const App = () => {
   const dispatch =  useDispatch();
 
   async function fetchMe(){
-    const resp = await axios.get('/api/v1/me');
+    const resp = await axios.get('https://3dcpv7-4000.csb.app/api/v1/me');
     const me = resp.data.user;
 
     if(resp.data.success == true){
