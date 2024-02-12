@@ -19,13 +19,13 @@ const Product = () => {
     if (filter.includes('category=All,')){
       query = '';
     }
-    let resp = await axios.get(`/api/v1/products?page=1&limit=8&${ query }`);
+    let resp = await axios.get(`https://3dcpv7-4000.csb.app/api/v1/products?page=1&limit=8&${ query }`);
     setProducts(resp.data.products);
 
-    resp = await axios.get(`/api/v1/products?page=1&limit=8&city=jaipur`);
+    resp = await axios.get(`https://3dcpv7-4000.csb.app/api/v1/products?page=1&limit=8&city=jaipur`);
     setjaipurprod(resp.data.products);
 
-    resp = await axios.get(`/api/v1/products?page=1&limit=8&category=tractor`);
+    resp = await axios.get(`https://3dcpv7-4000.csb.app/api/v1/products?page=1&limit=8&category=tractor`);
     settractor(resp.data.products)
   }
 
