@@ -30,7 +30,7 @@ const ProductDetails = () => {
   async function handleAddToCart(){
 
     if(isAuth){
-      let resp = await axios.put('/api/v1/cart',{
+      let resp = await axios.put('https://3dcpv7-4000.csb.app/api/v1/cart',{
         type : 'add',
         productId : prod._id,
         quantity : 1
@@ -54,7 +54,7 @@ const ProductDetails = () => {
   }
 
   async function fetchRecomandations(){
-    let resp = await axios.get(`/api/v1/products?city=${ prod.city }`);
+    let resp = await axios.get(`https://3dcpv7-4000.csb.app/api/v1/products?city=${ prod.city }`);
     setprodCities(resp.data.products);
     setprodNearCities(resp.data.moreProducts)
 
@@ -62,13 +62,13 @@ const ProductDetails = () => {
 
   async function fetchCategoryReccomandations(){
     if(prod.category){
-      const resp = await axios.get(`/api/v1/products?category=${ prod.category }`);
+      const resp = await axios.get(`https://3dcpv7-4000.csb.app/api/v1/products?category=${ prod.category }`);
       setprodCategories( resp.data.products );
     }
   }
 
   async function getProduct(){
-    const resp = await axios.get(`/api/v1/product/${params.id}`);
+    const resp = await axios.get(`https://3dcpv7-4000.csb.app/api/v1/product/${params.id}`);
 
     setprod( resp.data.product );
   }
