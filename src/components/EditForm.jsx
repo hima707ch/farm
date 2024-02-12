@@ -36,7 +36,7 @@ const EditForm = ({prev, seteditForm}) => {
     }
 
   async function deleteImage(public_id){
-    const resp = await axios.put(`/api/v1/product/${ prev._id }`, {delete_public_id : public_id});
+    const resp = await axios.put(`https://3dcpv7-4000.csb.app/api/v1/product/${ prev._id }`, {delete_public_id : public_id});
     console.log(resp.data);
 
     enqueueSnackbar("Successfully Deleted", {variant : 'success', anchorOrigin : {
