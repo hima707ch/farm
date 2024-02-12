@@ -6,7 +6,7 @@ import './styles/chat.css'
 import SendIcon from '@mui/icons-material/Send';
 import CloseIcon from '@mui/icons-material/Close';
 
-const socket = io('http://localhost:4000', { transports : ['websocket','websocket', 'polling']}); // Connect to your server
+const socket = io('https://3dcpv7-4000.csb.app', { transports : ['websocket','websocket', 'polling']}); // Connect to your server
 
 const ChatPage = ({prod, reciverId, setshowChat}) => {
 
