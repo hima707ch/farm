@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import store from './store';
@@ -11,6 +11,7 @@ import { SnackbarProvider } from 'notistack';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
+    <StrictMode>
     <GoogleOAuthProvider
     clientId= {process.env.REACT_APP_AUTH_ID}
     >
@@ -23,5 +24,6 @@ root.render(
       </Provider>
 
     </GoogleOAuthProvider>
+        </StrictMode>
 
 );
