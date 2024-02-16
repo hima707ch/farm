@@ -1,0 +1,112 @@
+.chat-cont{
+    /* background-color: rgb(107, 138, 166); */
+    background-color: rgb(237, 237, 237);
+    border: 6px solid rgb(107, 138, 166);
+    border-radius: 1rem;
+    margin : auto 0rem auto 3rem;
+    padding : 0% 0.5% 0.5% 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.3rem;
+    max-height: 50rem;
+    min-height: 30rem;
+    overflow: scroll;
+    width: 30vw;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 75vh;
+    z-index: 100;
+}
+
+.head{
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom: 2rem;
+    position: fixed;
+    background-color: inherit;
+    padding-top: 0.5%;
+}
+
+.chat-cont  h3{
+    margin-top: 0;
+}
+
+.chats{
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    margin: 4rem 0rem;
+}
+
+.chat-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: max-content;
+}
+
+.post{
+    background-color: rgb(149, 194, 230);
+    padding: 0.5rem 3rem;
+    align-self: flex-end;
+    border-radius: 0.35rem;
+    margin: 0.5rem 0rem;
+}
+
+.get{
+    background-color: rgb(153, 172, 187);
+    padding: 0.5rem 3rem;
+    align-self: flex-start;
+    border-radius: 0.35rem;
+    margin: 0.5rem 0rem;
+}
+
+.send-box{
+    margin-top: 2rem;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom : 1rem;
+    right: 2rem;
+    background-color: inherit;
+}
+
+.send-box  input{
+    width: 70%;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.15rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+.send-but{
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.close{
+    background-color: transparent;
+    border: none;
+    
+    cursor: pointer;
+}
+
+.close2{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color : white;
+    margin: 2rem;
+}
+
+.remove{
+    color: blue;
+}

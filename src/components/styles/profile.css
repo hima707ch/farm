@@ -1,0 +1,107 @@
+.profile-cont{
+    padding: 3rem 6rem;
+    max-width: 70rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.profile-cont > h1 {
+    margin-top: 5rem;
+}
+
+.chat-card{
+    background-color: #ffffff;
+    padding: 0.275rem 1rem 0rem;
+    margin: 0rem 0rem;
+    border-width: 10%;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+.chat-id{
+    color: rgba(31, 31, 31, 0.794);
+    margin-top: 0!important;
+}
+
+.chat-name{
+    margin-bottom: 0.3rem !important;
+    font-size: 1.25rem !important;
+}
+
+.chat-card > hr{
+    width: 100%;
+    margin: 0;
+}
+
+.chat-card p {
+    margin: 0.75rem 0rem;
+    font-size: 1.15rem;
+}
+
+.chat-card:hover{
+    background-color: #c1dcf1;
+}
+
+.chat-cont1{
+    background-color: #E2EEF7;
+}
+
+.my-details{
+    display: flex;
+}
+
+.my-details > .buttons{
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.my-details > img {
+    height:fit-content;
+}
+
+.details-profile > h2, h3{
+    margin: 0.5rem 0rem;
+}
+
+.details-profile{
+    margin: 0 2rem;
+    color: rgb(126, 126, 0);
+    display: flex;
+    flex-direction: column;
+    width:fit-content;
+    justify-content: flex-start;
+}
+
+
+.details-profile > p {
+    font-size: 1.2rem;
+    margin: 0.25rem 0rem;
+}
+
+.prod-card{
+    display: flex;
+    padding : 2rem;
+    margin: 1rem 0rem;
+    background-color: rgb(248, 250, 250);
+    border: 1px solid black;
+    border-radius: 1rem;
+    justify-content: space-between;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.imgs{
+    margin-left: 2rem;
+}
+
+.but-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
