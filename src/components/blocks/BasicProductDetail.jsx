@@ -9,6 +9,7 @@ import AddIcon from '@mui/icons-material/Add';
 import DoneIcon from '@mui/icons-material/Done';
 import axios from 'axios';
 import { useSnackbar } from 'notistack';
+import domain from '../../constants';
 import '../styles/sell.css';
 
 const BasicProductDetail = ({images, prev, type}) => {

@@ -5,6 +5,7 @@ import axios from 'axios';
 import CategoriesSelector from './CategoriesSelector';
 import CitiesSelector from './CitiesSelector';
 import { useSelector } from 'react-redux';
+import domain from '../constants';
 
 const Product = () => {
 

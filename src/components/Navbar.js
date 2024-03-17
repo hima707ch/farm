@@ -8,6 +8,7 @@ import axios from 'axios';
 import { logout, setUser } from '../slices/user';
 import ChatList from './ChatList';
 import ChatPage from './ChatPage';
+import domain from '../constants';
 
 const Navbar = () => {
   const { user, isAuth } = useSelector( s=>s.user );

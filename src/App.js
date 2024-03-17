@@ -15,6 +15,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import axios from 'axios';
 import { setUser } from './slices/user';
 import ChatList from './components/ChatList';
+import domain from './constants';
 
 const App = () => {
   const { user, isAuth} = useSelector(s=>s.user);

@@ -5,6 +5,7 @@ import BasicProductDetail from './blocks/BasicProductDetail';
 import CloseIcon from '@mui/icons-material/Close';
 import { useSnackbar } from 'notistack';
 import axios from 'axios';
+import domain from '../constants';
 
 const EditForm = ({prev, seteditForm}) => {
 

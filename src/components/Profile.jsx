@@ -9,6 +9,7 @@ import EditForm from './EditForm';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { useSnackbar } from 'notistack';
 import ChatList from './ChatList';
+import domain from '../constants';
 
 const Profile = () => {
 

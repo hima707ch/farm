@@ -5,6 +5,7 @@ import '../styles/cart.css'
 import { useDispatch } from 'react-redux';
 import { setUser } from '../../slices/user';
 import { useNavigate } from 'react-router-dom';
+import domain from '../../constants';
 
 const ItemCard = ({prod}) => {
 

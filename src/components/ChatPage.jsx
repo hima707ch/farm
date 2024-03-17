@@ -5,6 +5,7 @@ import { io } from 'socket.io-client';
 import './styles/chat.css'
 import SendIcon from '@mui/icons-material/Send';
 import CloseIcon from '@mui/icons-material/Close';
+import domain from '../constants';
 
 const socket = io(`${domain}`, { transports : ['websocket','websocket', 'polling']}); // Connect to your server
 

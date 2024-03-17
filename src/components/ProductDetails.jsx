@@ -9,6 +9,7 @@ import { useParams } from 'react-router-dom';
 import { setUser } from '../slices/user';
 import ChatPage from './ChatPage';
 import ProductCard from './card/ProductCard';
+import domain from '../constants';
 
 
 
